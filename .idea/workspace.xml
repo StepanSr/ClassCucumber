@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6893711f-c392-48b6-8d3a-e2314b76fa1f" name="Default Changelist" comment="" />
+    <list default="true" id="6893711f-c392-48b6-8d3a-e2314b76fa1f" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -80,8 +82,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/runners/Runner.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+            <state relative-caret-position="323">
+              <caret line="19" column="1" lean-forward="true" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -190,6 +192,9 @@
       <find>package pages\;\n\nimport org\.openqa\.selenium\.WebDriver\;\nimport org\.openqa\.selenium\.WebElement\;\nimport org\.openqa\.selenium\.support\.FindBy\;\nimport org\.openqa\.selenium\.support\.PageFactory\;\nimport utilities\.Driver\;\n\npublic class GooglePage \{\n    WebDriver driver\;\n    public GooglePage\(\)\{\n        driver \= Driver\.getDriver\(\)\;\n        PageFactory\.initElements\(driver\,this\)\;\n\n    \}\n    \@FindBy\(xpath \= \&quot;\/\/input\[\@name\=\'q\'\]\&quot;\)\n            public WebElement searchBox\;\n\n            \@FindBy \(xpath \= \&quot;\/\/input\[\@value\=\'Google Search\'\]\&quot;\)\n                    public WebElement searchButton\;\n\}\n</find>
     </findStrings>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -236,11 +241,11 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="663" />
-    <option name="y" value="29" />
+    <option name="y" value="23" />
     <option name="width" value="1440" />
-    <option name="height" value="821" />
+    <option name="height" value="816" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -327,7 +332,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548052589792" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548055482913" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
@@ -485,7 +490,8 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="663" y="29" width="1440" height="821" extended-state="0" />
+    <frame x="0" y="23" width="1440" height="816" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49072164" visible="true" weight="0.17596567" />
       <window_info id="Image Layers" order="1" />
@@ -502,7 +508,7 @@
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="7" sideWeight="0.49785408" weight="0.32713756" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" sideWeight="0.49928468" visible="true" weight="0.32577905" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" sideWeight="0.49928468" visible="true" weight="0.3281027" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5007153" side_tool="true" weight="0.39900866" />
       <window_info anchor="bottom" id="Version Control" order="10" show_stripe_button="false" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -800,8 +806,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/runners/Runner.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+        <state relative-caret-position="323">
+          <caret line="19" column="1" lean-forward="true" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
