@@ -10,7 +10,7 @@ import org.junit.runner.RunWith;
         features = "src/test/resources/features",
 
         glue = "steps",
-        tags = "@datatables",
+        tags = "@OUT_Scenario",
         dryRun = false
 
 

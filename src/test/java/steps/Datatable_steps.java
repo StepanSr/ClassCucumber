@@ -107,15 +107,43 @@ public class Datatable_steps {
         dttblOBJ.lastName.sendKeys(lastN);
     }
 
+
+    @Then("User should enter position {string}")
+    public void user_should_enter_position(String position) {
+dttblOBJ.position.sendKeys(position);
+    }
+
+    @Then("User should enter office {string}")
+    public void user_should_enter_office(String office) {
+        dttblOBJ.office.sendKeys(office);
+    }
+
+    @Then("User should enter extension {string}")
+    public void user_should_enter_extension(String extension) {
+        dttblOBJ.extention.sendKeys(extension);
+    }
+
+    @Then("User should enter start date {string}")
+    public void user_should_enter_start_date(String date) {
+        dttblOBJ.startDate.sendKeys(date);
+    }
+
+    @Then("User should enter salary {string}")
+    public void user_should_enter_salary(String salary) {
+        dttblOBJ.salary.sendKeys(salary);
+    }
+
+
     @Then("User enters first name {string} to search box")
     public void user_enters_first_name_to_search_box(String firstName) {
         dttblOBJ.searchfild.sendKeys(firstName+ Keys.ENTER);
 
     }
 
+
     @Then("User should see first name is inserted in the table {string}")
-    public void user_should_see_first_name_is_inserted_in_the_table(String lastN) {
-        String expected = lastN;
+    public void user_should_see_first_name_is_inserted_in_the_table(String firstName) {
+        String expected = firstName;
         String actual = dttblOBJ.firstResult.getText();
 
         Assert.assertTrue("Name was not found!",actual.contains(expected));

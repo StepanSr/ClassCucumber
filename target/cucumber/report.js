@@ -1,178 +1,140 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("src/test/resources/features/datatable.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("src/test/resources/features/datatablesOUTLINE_SCENARIO.feature");
 formatter.feature({
   "name": "Testing datatables website",
   "description": "",
   "keyword": "Feature",
   "tags": [
     {
-      "name": "@datatables"
+      "name": "@OUT_Scenario"
     }
   ]
 });
-formatter.scenario({
+formatter.scenarioOutline({
   "name": "Testing adding new employee to the table",
   "description": "",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "name": "@datatables"
-    }
-  ]
+  "keyword": "Scenario Outline"
 });
 formatter.step({
   "name": "User is on the datatables homepage",
   "keyword": "Given "
 });
-formatter.match({
-  "location": "Datatable_steps.user_is_on_the_datatables_homepage()"
-});
-formatter.result({
-  "status": "passed"
-});
 formatter.step({
   "name": "User clicks to New Button",
   "keyword": "And "
-});
-formatter.match({
-  "location": "Datatable_steps.user_clicks_to_New_Button()"
-});
-formatter.result({
-  "status": "passed"
 });
 formatter.step({
   "name": "User should see Create New Entry Box",
   "keyword": "Then "
 });
-formatter.match({
-  "location": "Datatable_steps.user_should_see_Create_New_Entry_Box()"
-});
-formatter.result({
-  "status": "passed"
-});
 formatter.step({
-  "name": "User should enter firstname",
+  "name": "User should enter firstname \"\u003cfirstname\u003e\"",
   "keyword": "And "
 });
-formatter.match({
-  "location": "Datatable_steps.user_should_enter_firstname()"
-});
-formatter.result({
-  "status": "passed"
-});
 formatter.step({
-  "name": "User should enter lastname",
+  "name": "User should enter lastname \"\u003clastname\u003e\"",
   "keyword": "And "
 });
-formatter.match({
-  "location": "Datatable_steps.user_should_enter_lastname()"
-});
-formatter.result({
-  "status": "passed"
-});
 formatter.step({
-  "name": "User should enter position",
+  "name": "User should enter position \"\u003cposition\u003e\"",
   "keyword": "And "
 });
-formatter.match({
-  "location": "Datatable_steps.user_should_enter_position()"
-});
-formatter.result({
-  "status": "passed"
-});
 formatter.step({
-  "name": "User should enter office",
+  "name": "User should enter office \"\u003coffice\u003e\"",
   "keyword": "And "
 });
-formatter.match({
-  "location": "Datatable_steps.user_should_enter_office()"
-});
-formatter.result({
-  "status": "passed"
-});
 formatter.step({
-  "name": "User should enter extension",
+  "name": "User should enter extension \"\u003cextension\u003e\"",
   "keyword": "And "
 });
-formatter.match({
-  "location": "Datatable_steps.user_should_enter_extension()"
-});
-formatter.result({
-  "status": "passed"
-});
 formatter.step({
-  "name": "User should enter start date",
+  "name": "User should enter start date \"\u003cdate\u003e\"",
   "keyword": "And "
 });
-formatter.match({
-  "location": "Datatable_steps.user_should_enter_start_date()"
-});
-formatter.result({
-  "status": "passed"
-});
 formatter.step({
-  "name": "User should enter salary",
+  "name": "User should enter salary \"\u003csalary\u003e\"",
   "keyword": "And "
-});
-formatter.match({
-  "location": "Datatable_steps.user_should_enter_salary()"
-});
-formatter.result({
-  "status": "passed"
 });
 formatter.step({
   "name": "User should click to create button",
   "keyword": "Then "
 });
-formatter.match({
-  "location": "Datatable_steps.user_should_click_to_create_button()"
-});
-formatter.result({
-  "status": "passed"
-});
 formatter.step({
-  "name": "User enters first name to search box",
+  "name": "User enters first name \"\u003cfirstname\u003e\" to search box",
   "keyword": "And "
 });
-formatter.match({
-  "location": "Datatable_steps.user_enters_first_name_to_search_box()"
-});
-formatter.result({
-  "status": "passed"
-});
 formatter.step({
-  "name": "User should see first name is inserted in the table",
+  "name": "User should see first name is inserted in the table \"\u003cfirstname\u003e\"",
   "keyword": "Then "
 });
-formatter.match({
-  "location": "Datatable_steps.user_should_see_first_name_is_inserted_in_the_table()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.uri("src/test/resources/features/datatableNORMAL.feature");
-formatter.feature({
-  "name": "Testing datatables website",
+formatter.examples({
+  "name": "Test data for datatables",
   "description": "",
-  "keyword": "Feature",
-  "tags": [
+  "keyword": "Examples",
+  "rows": [
     {
-      "name": "@datatables"
+      "cells": [
+        "firstname",
+        "lastname",
+        "position",
+        "office",
+        "extension",
+        "date",
+        "salary"
+      ]
     },
     {
-      "name": "@datatablesN"
+      "cells": [
+        "john",
+        "doe",
+        "slave",
+        "Chicago",
+        "123",
+        "2019-01-12",
+        "1234"
+      ]
+    },
+    {
+      "cells": [
+        "Sonya",
+        "Ru",
+        "quin",
+        "Zhytomyr",
+        "11",
+        "2019-11-11",
+        "1000000"
+      ]
+    },
+    {
+      "cells": [
+        "Maks",
+        "Ty",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "cells": [
+        "Max",
+        "Smith",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
     }
   ]
 });
 formatter.scenario({
   "name": "Testing adding new employee to the table",
   "description": "",
-  "keyword": "Scenario",
+  "keyword": "Scenario Outline",
   "tags": [
     {
-      "name": "@datatables"
-    },
-    {
-      "name": "@datatablesN"
+      "name": "@OUT_Scenario"
     }
   ]
 });
@@ -207,7 +169,7 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "User should enter firstname \"JOE\"",
+  "name": "User should enter firstname \"john\"",
   "keyword": "And "
 });
 formatter.match({
@@ -217,7 +179,7 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "User should enter lastname \"BABUN\"",
+  "name": "User should enter lastname \"doe\"",
   "keyword": "And "
 });
 formatter.match({
@@ -227,51 +189,51 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "User should enter position",
+  "name": "User should enter position \"slave\"",
   "keyword": "And "
 });
 formatter.match({
-  "location": "Datatable_steps.user_should_enter_position()"
+  "location": "Datatable_steps.user_should_enter_position(String)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "User should enter office",
+  "name": "User should enter office \"Chicago\"",
   "keyword": "And "
 });
 formatter.match({
-  "location": "Datatable_steps.user_should_enter_office()"
+  "location": "Datatable_steps.user_should_enter_office(String)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "User should enter extension",
+  "name": "User should enter extension \"123\"",
   "keyword": "And "
 });
 formatter.match({
-  "location": "Datatable_steps.user_should_enter_extension()"
+  "location": "Datatable_steps.user_should_enter_extension(String)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "User should enter start date",
+  "name": "User should enter start date \"2019-01-12\"",
   "keyword": "And "
 });
 formatter.match({
-  "location": "Datatable_steps.user_should_enter_start_date()"
+  "location": "Datatable_steps.user_should_enter_start_date(String)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "User should enter salary",
+  "name": "User should enter salary \"1234\"",
   "keyword": "And "
 });
 formatter.match({
-  "location": "Datatable_steps.user_should_enter_salary()"
+  "location": "Datatable_steps.user_should_enter_salary(String)"
 });
 formatter.result({
   "status": "passed"
@@ -287,7 +249,7 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "User enters first name \"JOE\" to search box",
+  "name": "User enters first name \"john\" to search box",
   "keyword": "And "
 });
 formatter.match({
@@ -297,7 +259,427 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "User should see first name is inserted in the table \"BABUN\"",
+  "name": "User should see first name is inserted in the table \"john\"",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "Datatable_steps.user_should_see_first_name_is_inserted_in_the_table(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.scenario({
+  "name": "Testing adding new employee to the table",
+  "description": "",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "name": "@OUT_Scenario"
+    }
+  ]
+});
+formatter.step({
+  "name": "User is on the datatables homepage",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "Datatable_steps.user_is_on_the_datatables_homepage()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User clicks to New Button",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "Datatable_steps.user_clicks_to_New_Button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User should see Create New Entry Box",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "Datatable_steps.user_should_see_Create_New_Entry_Box()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User should enter firstname \"Sonya\"",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "Datatable_steps.user_should_enter_firstname(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User should enter lastname \"Ru\"",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "Datatable_steps.user_should_enter_lastname(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User should enter position \"quin\"",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "Datatable_steps.user_should_enter_position(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User should enter office \"Zhytomyr\"",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "Datatable_steps.user_should_enter_office(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User should enter extension \"11\"",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "Datatable_steps.user_should_enter_extension(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User should enter start date \"2019-11-11\"",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "Datatable_steps.user_should_enter_start_date(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User should enter salary \"1000000\"",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "Datatable_steps.user_should_enter_salary(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User should click to create button",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "Datatable_steps.user_should_click_to_create_button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User enters first name \"Sonya\" to search box",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "Datatable_steps.user_enters_first_name_to_search_box(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User should see first name is inserted in the table \"Sonya\"",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "Datatable_steps.user_should_see_first_name_is_inserted_in_the_table(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.scenario({
+  "name": "Testing adding new employee to the table",
+  "description": "",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "name": "@OUT_Scenario"
+    }
+  ]
+});
+formatter.step({
+  "name": "User is on the datatables homepage",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "Datatable_steps.user_is_on_the_datatables_homepage()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User clicks to New Button",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "Datatable_steps.user_clicks_to_New_Button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User should see Create New Entry Box",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "Datatable_steps.user_should_see_Create_New_Entry_Box()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User should enter firstname \"Maks\"",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "Datatable_steps.user_should_enter_firstname(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User should enter lastname \"Ty\"",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "Datatable_steps.user_should_enter_lastname(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User should enter position \"\"",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "Datatable_steps.user_should_enter_position(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User should enter office \"\"",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "Datatable_steps.user_should_enter_office(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User should enter extension \"\"",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "Datatable_steps.user_should_enter_extension(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User should enter start date \"\"",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "Datatable_steps.user_should_enter_start_date(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User should enter salary \"\"",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "Datatable_steps.user_should_enter_salary(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User should click to create button",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "Datatable_steps.user_should_click_to_create_button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User enters first name \"Maks\" to search box",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "Datatable_steps.user_enters_first_name_to_search_box(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User should see first name is inserted in the table \"Maks\"",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "Datatable_steps.user_should_see_first_name_is_inserted_in_the_table(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.scenario({
+  "name": "Testing adding new employee to the table",
+  "description": "",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "name": "@OUT_Scenario"
+    }
+  ]
+});
+formatter.step({
+  "name": "User is on the datatables homepage",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "Datatable_steps.user_is_on_the_datatables_homepage()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User clicks to New Button",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "Datatable_steps.user_clicks_to_New_Button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User should see Create New Entry Box",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "Datatable_steps.user_should_see_Create_New_Entry_Box()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User should enter firstname \"Max\"",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "Datatable_steps.user_should_enter_firstname(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User should enter lastname \"Smith\"",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "Datatable_steps.user_should_enter_lastname(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User should enter position \"\"",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "Datatable_steps.user_should_enter_position(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User should enter office \"\"",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "Datatable_steps.user_should_enter_office(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User should enter extension \"\"",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "Datatable_steps.user_should_enter_extension(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User should enter start date \"\"",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "Datatable_steps.user_should_enter_start_date(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User should enter salary \"\"",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "Datatable_steps.user_should_enter_salary(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User should click to create button",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "Datatable_steps.user_should_click_to_create_button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User enters first name \"Max\" to search box",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "Datatable_steps.user_enters_first_name_to_search_box(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User should see first name is inserted in the table \"Max\"",
   "keyword": "Then "
 });
 formatter.match({
