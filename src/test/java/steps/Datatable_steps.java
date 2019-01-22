@@ -76,12 +76,12 @@ public class Datatable_steps {
 
     @Then("User should click to create button")
     public void user_should_click_to_create_button() {
-       dttblOBJ.createBTN.click();
+        dttblOBJ.createBTN.click();
     }
 
     @Then("User enters first name to search box")
     public void user_enters_first_name_to_search_box() {
-        dttblOBJ.searchfild.sendKeys(lastName+ Keys.ENTER);
+        dttblOBJ.searchfild.sendKeys(lastName + Keys.ENTER);
 
     }
 
@@ -90,11 +90,9 @@ public class Datatable_steps {
         String expected = lastName;
         String actual = dttblOBJ.firstResult.getText();
 
-        Assert.assertTrue("Name was not found!",actual.contains(expected));
+        Assert.assertTrue("Name was not found!", actual.contains(expected));
 
     }
-
-
 
 
     @Then("User should enter firstname {string}")
@@ -110,7 +108,7 @@ public class Datatable_steps {
 
     @Then("User should enter position {string}")
     public void user_should_enter_position(String position) {
-dttblOBJ.position.sendKeys(position);
+        dttblOBJ.position.sendKeys(position);
     }
 
     @Then("User should enter office {string}")
@@ -136,7 +134,7 @@ dttblOBJ.position.sendKeys(position);
 
     @Then("User enters first name {string} to search box")
     public void user_enters_first_name_to_search_box(String firstName) {
-        dttblOBJ.searchfild.sendKeys(firstName+ Keys.ENTER);
+        dttblOBJ.searchfild.sendKeys(firstName + Keys.ENTER);
 
     }
 
@@ -145,8 +143,8 @@ dttblOBJ.position.sendKeys(position);
     public void user_should_see_first_name_is_inserted_in_the_table(String firstName) {
         String expected = firstName;
         String actual = dttblOBJ.firstResult.getText();
-
-        Assert.assertTrue("Name was not found!",actual.contains(expected));
+        Assert.assertTrue(false);
+        Assert.assertTrue("Name was not found!", actual.contains(expected));
 
     }
 
