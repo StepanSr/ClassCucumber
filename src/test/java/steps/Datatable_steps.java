@@ -3,6 +3,7 @@ package steps;
 import com.github.javafaker.Faker;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
+import org.apache.http.util.Asserts;
 import org.junit.Assert;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
@@ -25,6 +26,7 @@ public class Datatable_steps {
         Thread.sleep(3000);
 
         dttblOBJ.newBTN.click();
+
     }
 
     @Then("User should see Create New Entry Box")

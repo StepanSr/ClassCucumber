@@ -10,7 +10,7 @@ import org.junit.runner.RunWith;
         features = "src/test/resources/features",
 
         glue = "steps",
-        tags = "@OUT_Scenario",
+        tags = "@wiki",
         dryRun = false
 
 

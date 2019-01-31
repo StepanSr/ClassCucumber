@@ -6,7 +6,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import utilities.Driver;
 
-public class WikiPage {
+public abstract class WikiPage {
     WebDriver driver;
 
     public WikiPage() {
@@ -16,9 +16,9 @@ public class WikiPage {
     }
 
     @FindBy(id = "searchInput")
-    public WebElement searchBox;
+    public static WebElement searchBox;
 
     @FindBy(id = "firstHeading")
-    public WebElement header;
+    public static WebElement header;
 }
 

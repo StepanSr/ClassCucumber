@@ -7,8 +7,9 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import utilities.Driver;
 
-public class DatatablePage {
+public  class DatatablePage {
     WebDriver driver;
+
     public DatatablePage(){
         driver = Driver.getDriver();
         PageFactory.initElements(driver, this);
