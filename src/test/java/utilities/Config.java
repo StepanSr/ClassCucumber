@@ -18,7 +18,8 @@ public class Config {
             System.out.println("path: "+ path + " NOT FOUND");
         }
     }
-    public  static  String getProperty(String key){
+    public  static  String getProperty(String key)
+    {
         return properties.getProperty(key);
     }
 

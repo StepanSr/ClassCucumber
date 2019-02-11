@@ -24,7 +24,3 @@ Feature: Testing datatables website
 
     |firstname|lastname|position|office|extension|date    |salary|
     |john      |doe     |slave   |Chicago|123     |2019-01-12|1234|
-#    |Sonya     |Ru      |quin    |Zhytomyr|11     |2019-11-11|1000000|
-#    |Maks      |Ty      |        |        |       |          |       |
-#    |    Max   |  Smith  |        |        |       |          |       |
-#
