@@ -20,65 +20,65 @@ public class CustomResponse {
     Company company;
     String responseJson;
 
-//    public String getResponseJson() {
-//        return responseJson;
-//    }
-//
-//    public void setResponseJson(String response) {
-//        this.responseJson = response;
-//    }
-//
-//    public Company getCompany() {
-//        return company;
-//    }
-//
-//    public void setCompany(Company company) {
-//        this.company = company;
-//    }
-//
-//    public void setInstructors(List<Instructor> instructors) {
-//        this.instructors = instructors;
-//    }
-//
-//    public List<Student> getStudents() {
-//        return students;
-//    }
-//
-//    public void setStudents(List<Student> students) {
-//        this.students = students;
-//    }
-//
-//    public List<Instructor> getInstructors() {
-//        return instructors;
-//    }
-//
-//    public void setInstructor(List<Instructor> instructors) {
-//        this.instructors = instructors;
-//    }
-//
-//
-//
-//    public String getFirstName() {
-//        return firstName;
-//    }
-//
-//    public void setFirstName(String firstName) {
-//        this.firstName = firstName;
-//    }
-//
-//    public String getLastName() {
-//        return lastName;
-//    }
-//
-//    public void setLastName(String lastName) {
-//        this.lastName = lastName;
-//    }
-//
-//    public Contact getContact() {
-//        return contact;
-//    }
-//
-//    public void setContact(Contact contact) {
-//        this.contact = contact;
-//    }
+    public String getResponseJson() {
+        return responseJson;
+    }
+
+    public void setResponseJson(String response) {
+        this.responseJson = response;
+    }
+
+    public Company getCompany() {
+        return company;
+    }
+
+    public void setCompany(Company company) {
+        this.company = company;
+    }
+
+    public void setInstructors(List<Instructor> instructors) {
+        this.instructors = instructors;
+    }
+
+    public List<Student> getStudents() {
+        return students;
+    }
+
+    public void setStudents(List<Student> students) {
+        this.students = students;
+    }
+
+    public List<Instructor> getInstructors() {
+        return instructors;
+    }
+
+    public void setInstructor(List<Instructor> instructors) {
+        this.instructors = instructors;
+    }
+
+
+
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+
+    public Contact getContact() {
+        return contact;
+    }
+
+    public void setContact(Contact contact) {
+        this.contact = contact;
+    }
 }

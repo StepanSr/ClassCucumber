@@ -54,10 +54,10 @@ public class Amazon_steps {
 
     @Then("User should see headphones in result")
     public void user_should_see_headphones_in_result() {
-//        String result1 = amazonOBJ.result.getText();
-//        System.out.println(result1);
-       // Assert.assertTrue("message if fail",result1.contains("headphoneswww"));
-        System.out.println(amazonOBJ.a());
+        String result1 = amazonOBJ.result.getText();
+        System.out.println(result1);
+        Assert.assertTrue("message if fail",result1.contains("headphones"));
+       // System.out.println(amazonOBJ.a());
     }
 
 }

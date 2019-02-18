@@ -17,7 +17,7 @@ import java.io.FileOutputStream;
 import java.text.DecimalFormat;
 import java.util.concurrent.TimeUnit;
 
-public class GasMilageCalculatorTest {
+public class MilageCalculatorTest {
     GasMilageCalculatorPage gasPageOBG;
     private WebDriver driver;
     XSSFWorkbook workbook;
@@ -29,7 +29,7 @@ public class GasMilageCalculatorTest {
     public void setUp() throws Exception {
         driver = Driver.getDriver();
         driver.get("https://www.calculator.net/gas-mileage-calculator.html?ctype=standard&uscodreading=12360&uspodreading=12000&usgasputin=15&usgasprice=3&x=76&y=20&mucodreading=18900&mupodreading=18300&mugasputin=50&mugasprice=1");
-        inputStream = new FileInputStream("src/test/resources/testData/Gas.xlsx");
+        inputStream = new FileInputStream("src/test/resources/teData/Gas.xlsx");
         // inputStream = new FileInputStream("gasPath");
         workbook = new XSSFWorkbook(inputStream);
         worksheet = workbook.getSheet("Sheet1");
@@ -51,7 +51,7 @@ public class GasMilageCalculatorTest {
             }
 
         }
-        outputStream =new FileOutputStream("src/test/resources/testData/Gas.xlsx");
+        outputStream =new FileOutputStream("src/test/resources/teData/Gas.xlsx");
         workbook.write(outputStream);
         workbook.close();
         outputStream.close();

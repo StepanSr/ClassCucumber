@@ -22,18 +22,18 @@ public class AmazonPage {
     @FindBy(xpath = "//input[@value = 'Go']")
     public WebElement searchBTN;
 
-    @FindBy(id = "bcKwText")
+    @FindBy(css = "span.a-color-state.a-text-bold")
     public WebElement result;
 
     @FindBy(id = "bcKwText")
     public By hzhz;
 
 
-    public String a () {
-        String a = driver.findElement(hzhz).getText();
-        return a;
+//    public String a () {
+//        String a = driver.findElement(By.id("bcKwText")).getText();
+//        return a;
 
 
-    }
+//    }
 
 }
