@@ -63,8 +63,10 @@ formatter.match({
   "location": "Amazon_steps.user_should_see_headphones_in_result()"
 });
 formatter.result({
-  "status": "passed"
+  "error_message": "java.lang.AssertionError: message if fail\n\tat org.junit.Assert.fail(Assert.java:88)\n\tat org.junit.Assert.assertTrue(Assert.java:41)\n\tat steps.Amazon_steps.user_should_see_headphones_in_result(Amazon_steps.java:59)\n\tat ✽.User should see headphones in result(src/test/resources/features/amazon1.feature:8)\n",
+  "status": "failed"
 });
+formatter.embedding("image/png", "embedded0.png");
 formatter.after({
   "status": "passed"
 });

@@ -17,7 +17,7 @@ import java.io.FileOutputStream;
 import java.text.DecimalFormat;
 import java.util.concurrent.TimeUnit;
 
-public class MilageCalculatorTest {
+public class MilageCalculatorTes {
     GasMilageCalculatorPage gasPageOBG;
     private WebDriver driver;
     XSSFWorkbook workbook;

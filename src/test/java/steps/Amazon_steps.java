@@ -56,7 +56,7 @@ public class Amazon_steps {
     public void user_should_see_headphones_in_result() {
         String result1 = amazonOBJ.result.getText();
         System.out.println(result1);
-        Assert.assertTrue("message if fail",result1.contains("headphones"));
+        Assert.assertTrue("message if fail",result1.contains("headphoness"));
        // System.out.println(amazonOBJ.a());
     }
 
