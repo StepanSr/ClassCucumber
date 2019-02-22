@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="4" failures="1" name="TestSuite" time="241.302" errors="0" skipped="3">
+<testsuite tests="1" failures="0" name="runners.Runner" time="0.004" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
-    <property name="cucumber.options" value="”–help”"/>
+    <property name="cucumber.options" value="--tags @smoke"/>
     <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/jre/lib"/>
     <property name="java.vm.version" value="25.181-b13"/>
     <property name="gopherProxySet" value="false"/>
@@ -16,6 +16,7 @@
     <property name="user.country" value="US"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.os.patch.level" value="unknown"/>
+    <property name="test" value="Runner"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="user.dir" value="/Users/olhadorosh/IdeaProjects/chicago10cucumberjunit"/>
     <property name="java.runtime.version" value="1.8.0_181-b13"/>
@@ -35,8 +36,8 @@
     <property name="java.class.version" value="52.0"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="os.version" value="10.14.2"/>
-    <property name="library.jansi.path" value="/usr/local/Cellar/maven/3.6.0/libexec/lib/jansi-native"/>
     <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="library.jansi.path" value="/usr/local/Cellar/maven/3.6.0/libexec/lib/jansi-native"/>
     <property name="user.home" value="/Users/olhadorosh"/>
     <property name="user.timezone" value="America/Chicago"/>
     <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/>
@@ -47,7 +48,7 @@
     <property name="java.vm.specification.version" value="1.8"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/jre"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher test -Dcucumber.options=”–help”"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher test -Dcucumber.options=--tags @smoke -Dtest=Runner"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="user.language" value="en"/>
     <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
@@ -65,47 +66,5 @@
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="Test.EmployeesDBTest" name="setUp" time="60.321">
-    <failure message="IO Error: The Network Adapter could not establish the connection" type="java.sql.SQLRecoverableException">java.sql.SQLRecoverableException: IO Error: The Network Adapter could not establish the connection
-	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:458)
-	at oracle.jdbc.driver.PhysicalConnection.&lt;init&gt;(PhysicalConnection.java:546)
-	at oracle.jdbc.driver.T4CConnection.&lt;init&gt;(T4CConnection.java:236)
-	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:32)
-	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:521)
-	at java.sql.DriverManager.getConnection(DriverManager.java:664)
-	at java.sql.DriverManager.getConnection(DriverManager.java:247)
-	at utilities.DBUtility.establishConnection(DBUtility.java:19)
-	at Test.EmployeesDBTest.setUp(EmployeesDBTest.java:20)
-Caused by: oracle.net.ns.NetException: The Network Adapter could not establish the connection
-	at oracle.net.nt.ConnStrategy.execute(ConnStrategy.java:392)
-	at oracle.net.resolver.AddrResolution.resolveAndExecute(AddrResolution.java:434)
-	at oracle.net.ns.NSProtocol.establishConnection(NSProtocol.java:687)
-	at oracle.net.ns.NSProtocol.connect(NSProtocol.java:247)
-	at oracle.jdbc.driver.T4CConnection.connect(T4CConnection.java:1102)
-	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:320)
-	... 44 more
-Caused by: java.net.SocketTimeoutException: connect timed out
-	at java.net.PlainSocketImpl.socketConnect(Native Method)
-	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
-	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
-	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
-	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
-	at java.net.Socket.connect(Socket.java:589)
-	at oracle.net.nt.TcpNTAdapter.connect(TcpNTAdapter.java:150)
-	at oracle.net.nt.ConnOption.connect(ConnOption.java:133)
-	at oracle.net.nt.ConnStrategy.execute(ConnStrategy.java:370)
-	... 49 more
-</failure>
-    <system-out>Configuring TestNG with: org.apache.maven.surefire.testng.conf.TestNG652Configurator@7a46a697
-</system-out>
-  </testcase>
-  <testcase classname="Test.EmployeesDBTest" name="countTest" time="60.327">
-    <skipped/>
-  </testcase>
-  <testcase classname="Test.EmployeesDBTest" name="nameTestByID" time="60.327">
-    <skipped/>
-  </testcase>
-  <testcase classname="Test.EmployeesDBTest" name="closeAll" time="60.327">
-    <skipped/>
-  </testcase>
+  <testcase classname="This is my first Feature" name="Google search scenario" time="0.004"/>
 </testsuite>

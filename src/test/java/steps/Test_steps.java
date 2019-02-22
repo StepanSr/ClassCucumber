@@ -18,7 +18,7 @@ public class Test_steps {
     @Then("user should see apple related results")
     public void user_should_see_apple_related_results() {
         System.out.println("user see apple related results");
-        Assert.fail("fail and poh");
+        //Assert.fail("fail and poh");
 
     }
 

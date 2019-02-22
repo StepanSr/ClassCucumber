@@ -1,24 +1,16 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("src/test/resources/features/amazon1.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("src/test/resources/features/test.feature");
 formatter.feature({
-  "name": "Amazon search",
+  "name": "This is my first Feature",
   "description": "",
-  "keyword": "Feature",
-  "tags": [
-    {
-      "name": "@some"
-    }
-  ]
+  "keyword": "Feature"
 });
 formatter.scenario({
-  "name": "Amazon search test",
+  "name": "Google search scenario",
   "description": "",
   "keyword": "Scenario",
   "tags": [
     {
-      "name": "@some"
-    },
-    {
-      "name": "@amazon_search"
+      "name": "@smoke"
     }
   ]
 });
@@ -26,103 +18,31 @@ formatter.before({
   "status": "passed"
 });
 formatter.step({
-  "name": "User is on the amazon page",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "Amazon_steps.user_is_on_the_amazon_page()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "User enters headphones keyword",
+  "name": "user goes to Google application",
   "keyword": "When "
 });
 formatter.match({
-  "location": "Amazon_steps.user_enters_headphones_keyword()"
+  "location": "Test_steps.user_goes_to_Google_application()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "user click to search btn",
+  "name": "user searches for apple",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "Test_steps.user_searches_for_apple()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user should see apple related results",
   "keyword": "And "
 });
 formatter.match({
-  "location": "Amazon_steps.user_click_to_search_btn()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "User should see headphones in result",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "Amazon_steps.user_should_see_headphones_in_result()"
-});
-formatter.result({
-  "error_message": "java.lang.AssertionError: message if fail\n\tat org.junit.Assert.fail(Assert.java:88)\n\tat org.junit.Assert.assertTrue(Assert.java:41)\n\tat steps.Amazon_steps.user_should_see_headphones_in_result(Amazon_steps.java:59)\n\tat ✽.User should see headphones in result(src/test/resources/features/amazon1.feature:8)\n",
-  "status": "failed"
-});
-formatter.embedding("image/png", "embedded0.png");
-formatter.after({
-  "status": "passed"
-});
-formatter.uri("src/test/resources/features/wiki.feature");
-formatter.feature({
-  "name": "Wikipedia search feature",
-  "description": "",
-  "keyword": "Feature",
-  "tags": [
-    {
-      "name": "@some"
-    }
-  ]
-});
-formatter.scenario({
-  "name": "Wikipedia search test",
-  "description": "",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "name": "@some"
-    },
-    {
-      "name": "@wiki"
-    }
-  ]
-});
-formatter.before({
-  "status": "passed"
-});
-formatter.step({
-  "name": "User is on the wicipedia homepage",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "Wiki_steps.user_is_on_the_wicipedia_homepage()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user enter Stive Jobs to search bar and click enter",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "Wiki_steps.user_enter_Stive_Jobs_to_search_bar_and_click_enter()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "User sould see the first header is displaing steve jobs",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "Wiki_steps.user_sould_see_the_first_header_is_displaing_steve_jobs()"
+  "location": "Test_steps.user_should_see_apple_related_results()"
 });
 formatter.result({
   "status": "passed"
