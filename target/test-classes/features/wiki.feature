@@ -1,7 +1,7 @@
 @some
 Feature: Wikipedia search feature
 
-  @wiki
+  @w
   Scenario: Wikipedia search test
 
     Given User is on the wicipedia homepage

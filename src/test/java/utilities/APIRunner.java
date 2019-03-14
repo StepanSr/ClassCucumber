@@ -6,10 +6,10 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
-
 import java.io.IOException;
 
 public class APIRunner {
+
     private static CustomResponse cr;
 
     public static  CustomResponse getCR(){

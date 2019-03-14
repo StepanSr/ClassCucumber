@@ -8,12 +8,14 @@ import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
+import org.testng.annotations.BeforeClass;
 import utilities.APIRunner;
 import utilities.Driver;
 
 
 public class Hooks {
     @Before
+
     public void setUp(Scenario scenario) {
         System.out.println("this is run before each scenario");
 
@@ -30,6 +32,7 @@ public class Hooks {
 
             scenario.write(APIRunner.getResponse().getResponseJson());
         }
-
+Driver.closeDriver();
     }
+
 }

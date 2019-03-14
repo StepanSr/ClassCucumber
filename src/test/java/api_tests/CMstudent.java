@@ -19,7 +19,7 @@ public class CMstudent {
     }
     @Test
     public void student (){
-        Response response = RestAssured.get("http://cybertekchicago.com/student/2");
+        Response response = RestAssured.get("http://cybertekchicago.com/student/87");
         System.out.println(response.statusCode());
         System.out.println(response.asString());
 
@@ -27,6 +27,7 @@ public class CMstudent {
         System.out.println(jp.toString());
 
         System.out.println(jp.get("batch"));
+
 
         System.out.println(jp.get("company.address.street"));
 

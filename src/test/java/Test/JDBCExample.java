@@ -24,7 +24,7 @@ public class JDBCExample {
         Connection connection =DriverManager.getConnection("jdbc:oracle:thin:@ec2-18-221-139-83.us-east-2.compute.amazonaws.com:1521:xe","hr","hr");
         Statement statement = connection.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE,ResultSet.CONCUR_UPDATABLE);
         ResultSet resultSet = statement.executeQuery("select FIRST_NAME,LAST_NAME,EMPLOYEE_ID from employees");
-resultSet.next();
+         resultSet.next();
         System.out.println("sho za fignya");
         System.out.println(resultSet.getObject("FIRST_NAME"));
         resultSet.close();

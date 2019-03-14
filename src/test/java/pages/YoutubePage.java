@@ -10,10 +10,10 @@ public class YoutubePage {
     WebDriver driver;
 
 
-public  YoutubePage () {
-    driver = Driver.getDriver();
-    PageFactory.initElements(driver, this);
-}
+    public  YoutubePage () {
+        driver = Driver.getDriver();
+        PageFactory.initElements(driver, this);
+    }
     @FindBy(xpath = "//input[@name ='search_query']")
     public WebElement serchLine;
     @FindBy(xpath = "//button[@ id = 'search-icon-legacy']")

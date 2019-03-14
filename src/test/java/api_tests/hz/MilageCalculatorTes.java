@@ -1,21 +1,17 @@
-package Test;
+package api_tests.hz;
 
-import org.apache.http.util.Asserts;
 import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
-import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.WebDriver;
-import pages.GasMilageCalculatorPage;
+import api_tests.hz.GasMilageCalculatorPage;
 import utilities.Driver;
 
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.text.DecimalFormat;
-import java.util.concurrent.TimeUnit;
 
 public class MilageCalculatorTes {
     GasMilageCalculatorPage gasPageOBG;

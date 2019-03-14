@@ -6,7 +6,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import utilities.Driver;
 
-public abstract class WikiPage {
+public class WikiPage {
     WebDriver driver;
 
     public WikiPage() {

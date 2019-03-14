@@ -1,4 +1,4 @@
-package pages;
+package api_tests.hz;
 
 public class o {
     public static void main(String[] args) {

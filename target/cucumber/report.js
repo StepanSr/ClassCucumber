@@ -1,16 +1,21 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("src/test/resources/features/test.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("src/test/resources/features/weekDays.feature");
 formatter.feature({
-  "name": "This is my first Feature",
+  "name": "Week Days",
   "description": "",
-  "keyword": "Feature"
+  "keyword": "Feature",
+  "tags": [
+    {
+      "name": "@days"
+    }
+  ]
 });
 formatter.scenario({
-  "name": "Google search scenario",
+  "name": "check weekdays",
   "description": "",
   "keyword": "Scenario",
   "tags": [
     {
-      "name": "@smoke"
+      "name": "@days"
     }
   ]
 });
@@ -18,31 +23,31 @@ formatter.before({
   "status": "passed"
 });
 formatter.step({
-  "name": "user goes to Google application",
-  "keyword": "When "
+  "name": "open browser go to \"http://samples.gwtproject.org/samples/Showcase/Showcase.html#!CwCheckBox\"",
+  "keyword": "Given "
 });
 formatter.match({
-  "location": "Test_steps.user_goes_to_Google_application()"
+  "location": "BTN.open_browser_go_to(String)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "user searches for apple",
+  "name": "Randomly select days of the week.",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "Test_steps.user_searches_for_apple()"
+  "location": "BTN.randomly_select_days_of_the_week()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "user should see apple related results",
+  "name": "print the name of the day and uncheck immediately.",
   "keyword": "And "
 });
 formatter.match({
-  "location": "Test_steps.user_should_see_apple_related_results()"
+  "location": "BTN.print_the_name_of_the_day_and_uncheck_immediately()"
 });
 formatter.result({
   "status": "passed"

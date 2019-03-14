@@ -8,7 +8,7 @@ import utilities.Driver;
 
 public class GooglePage {
 
-    WebDriver driver;
+   WebDriver driver;
 
     public GooglePage() {
         driver = Driver.getDriver();

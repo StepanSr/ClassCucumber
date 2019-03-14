@@ -8,9 +8,9 @@ import org.openqa.selenium.Keys;
 import pages.WikiPage;
 import utilities.Driver;
 
-public class Wiki_steps extends WikiPage {
+public class Wiki_steps {
 
-   // WikiPage wikiobj = new WikiPage();
+    WikiPage wikiobj = new WikiPage();
 
 
     @Given("User is on the wicipedia homepage")
@@ -21,12 +21,12 @@ public class Wiki_steps extends WikiPage {
 
     @When("user enter Stive Jobs to search bar and click enter")
     public void user_enter_Stive_Jobs_to_search_bar_and_click_enter() {
-        WikiPage.searchBox.sendKeys("Steve Jobs"+ Keys.ENTER);
+        wikiobj.searchBox.sendKeys("Steve Jobs"+ Keys.ENTER);
     }
 
     @Then("User sould see the first header is displaing steve jobs")
     public void user_sould_see_the_first_header_is_displaing_steve_jobs() {
-        String acctualText = WikiPage.header.getText();
+        String acctualText = wikiobj.header.getText();
         Assert.assertTrue(acctualText.equalsIgnoreCase("Steve Jobs"));
     }
 

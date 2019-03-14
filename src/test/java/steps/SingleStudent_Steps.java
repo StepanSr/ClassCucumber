@@ -20,6 +20,7 @@ public class SingleStudent_Steps {
     @Then("user tests for required attributes")
     public void user_tests_for_required_attributes() {
         CustomResponse cr = APIRunner.getResponse();
+        System.out.println(cr.getResponseJson());
         Assert.assertTrue("name missing",cr.getFirstName()!=null);
         Assert.assertTrue("last name missing",cr.getLastName()!=null);
         Assert.assertTrue(cr.getContact().getEmailAddress()!=null);

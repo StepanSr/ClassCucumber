@@ -10,6 +10,7 @@ public class DBUtility {
     private static Connection connection;
     private static Statement statement;
     private static ResultSet resultSet;
+
     private static int rowsCount;
     private static int columnNum;
 
@@ -23,7 +24,6 @@ public class DBUtility {
                 break;
 
         }
-
 
     }
 
