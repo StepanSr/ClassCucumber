@@ -7,6 +7,9 @@ import org.junit.Assert;
 import org.openqa.selenium.Keys;
 import pages.YoutubePage;
 import utilities.Driver;
+import static org.hamcrest.MatcherAssert.*;
+import static org.hamcrest.Matchers.*;
+
 
 public class Youtube_steps {
 
@@ -41,8 +44,9 @@ public class Youtube_steps {
     @Then("User should see result related to funy cat videos")
     public void user_should_see_result_related_to_funy_cat_videos() throws InterruptedException {
         Thread.sleep(5000);
-        Assert.assertTrue(Driver.getDriver().getTitle().contains("cat"));
-
+       // Assert.assertTrue(Driver.getDriver().getTitle().contains("cat"));
+        String s =Driver.getDriver().getTitle();
+     assertThat(s, is(not("cat")));
 
     }
 
