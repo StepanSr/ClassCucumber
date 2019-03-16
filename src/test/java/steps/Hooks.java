@@ -25,11 +25,13 @@ public class Hooks {
             final byte[] screenshot = ((TakesScreenshot) Driver.getDriver())
                     .getScreenshotAs(OutputType.BYTES);
             scenario.embed(screenshot, "image/png");
+            Driver.closeDriver();
         }
         if(scenario.isFailed()&& APIRunner.getCR()!=null){
 
             scenario.write(APIRunner.getResponse().getResponseJson());
         }
+
 
     }
 }
