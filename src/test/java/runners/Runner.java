@@ -11,8 +11,9 @@ import org.junit.runner.RunWith;
         features = "src/test/resources/features",
 
         glue = "steps",
-        tags = "@funny_cat",
+        tags = "@mira",
         dryRun = false
+
 
 
 

@@ -30,9 +30,9 @@ public class Driver {
            }
 
        }
-       driver.manage().timeouts().implicitlyWait(6, TimeUnit.SECONDS);
+       driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
        driver.manage().window().maximize();
-       driver.manage().timeouts().pageLoadTimeout(12,TimeUnit.SECONDS);
+       driver.manage().timeouts().pageLoadTimeout(30,TimeUnit.SECONDS);
        return driver;
    }
    public static  void closeDriver(){
