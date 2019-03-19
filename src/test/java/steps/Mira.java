@@ -29,7 +29,7 @@ public class Mira {
 
         //Assert.assertTrue(g.getText(),g.isSelected());
 
-        //System.out.println(g.getText());
+        System.out.println(g.getText());
     }
 
 
