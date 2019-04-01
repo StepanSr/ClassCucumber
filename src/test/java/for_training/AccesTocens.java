@@ -24,6 +24,11 @@ public class AccesTocens {
     }
     @Test
     public void useTockens() {
+        Response response = given().log().all().
+                param("email","teacherva5@gmail.com").
+                param("password", "maxpayne").
+                get("/sign");
+
 
     }
 

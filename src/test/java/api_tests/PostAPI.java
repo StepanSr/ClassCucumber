@@ -12,6 +12,7 @@ import utilities.APIRunner;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Vector;
 
 public class PostAPI {
     public PostAPI() throws IOException {
@@ -54,7 +55,7 @@ public class PostAPI {
         int i = 1;
         for(Instructor instructor:cr.getInstructors()){
         if(instructor.getSubject()==null){
-
+            //Vector<String>po = new Vector<>();
             System.out.println(i++ + " "+instructor.getFirstName()+instructor.getLastName());
         }
     }
